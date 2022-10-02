@@ -1,3 +1,6 @@
+# VSC
+.vscode/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +130,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+adventofcode21/max_d1/sliding-window.py
