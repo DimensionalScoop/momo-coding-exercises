@@ -4,6 +4,7 @@ with open("adventofcode21/momo_d2/input") as file:
 x = 0
 z = 0
 
+
 for d in f:
     match d[0]:
         case 'up': z -= int(d[1])
