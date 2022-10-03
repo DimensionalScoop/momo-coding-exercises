@@ -5,11 +5,13 @@ x = 0
 z = 0
 
 
-for d in f:
-    match d[0]:
-        case 'up': z -= int(d[1])
-        case 'down': z += int(d[1])
-        case 'forward': x += int(d[1])
+for cmd, number in f:
+    number = int(number)
+    match cmd:
+        case 'up': z -= number
+        case 'down': z += number
+        case 'forward': x += number
+        case _: raise ValueError()
 
 print(x*z)
         
