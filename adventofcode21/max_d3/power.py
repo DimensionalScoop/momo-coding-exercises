@@ -1,7 +1,8 @@
+from typing import Iterable
 import numpy as np
 
 
-def iter_as_binary_number(a):
+def iter_as_binary_number(a:Iterable):
     chars = [str(i) for i in a]
     string = "".join(chars)
     number = int(string, base=2)
