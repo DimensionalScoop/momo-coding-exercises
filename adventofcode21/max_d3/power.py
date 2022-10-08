@@ -1,14 +1,16 @@
+from typing import Iterable
 import numpy as np
 
 
-def iter_as_binary_number(a):
+def iter_as_binary_number(a: Iterable) -> int:
+    a = np.array(a).flatten()
     chars = [str(i) for i in a]
     string = "".join(chars)
     number = int(string, base=2)
     return number
 
 
-def load():
+def load() -> np.ndarray:
     with open("input") as file:
         chars = [
             [int(c) for c in line if c in ("0", "1")]

@@ -1,7 +1,7 @@
 from typing import Iterable
 import numpy as np
 
-from power import load
+from power import load, iter_as_binary_number
 
 
 def order_by_occurrences(a: Iterable) -> list:
@@ -60,18 +60,12 @@ def filter_number(criterion, binary):
     return valid
 
 
-def binary_array_to_int(a) -> int:
-    a = "".join(str(i) for i in a.flatten())
-    a = int(a, base=2)
-    return a
-
-
 if __name__ == "__main__":
     binary = load().astype("int")
     o2_array = filter_number(o2_criterion, binary)
-    o2 = binary_array_to_int(o2_array)
+    o2 = iter_as_binary_number(o2_array)
 
     co2_array = filter_number(co2_criterion, binary)
-    co2 = binary_array_to_int(co2_array)
+    co2 = iter_as_binary_number(co2_array)
 
     print(o2 * co2)
