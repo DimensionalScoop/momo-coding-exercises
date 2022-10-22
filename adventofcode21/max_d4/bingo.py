@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.typing import NDArray
 
-import read
+import easy_read
 
 
 def get_winning_board(random_numbers, boards):
@@ -46,7 +46,7 @@ def score(board, last_call, random_numbers):
 
 
 if __name__ == "__main__":
-    random_numbers, boards = read.get_input()
+    random_numbers, boards = easy_read.get_input()
 
     board, last_call = get_winning_board(random_numbers, boards)
     print(f"Winner: {score(board,last_call,random_numbers)}")
