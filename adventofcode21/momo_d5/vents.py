@@ -9,19 +9,30 @@ def load():
     return x1, y1, x2, y2
 
 def draw_vent(x1, y1, x2, y2, floor):
-    if x2 < x1:
-        x1, x2 = x2, x1
-    if y2 < y1:
-        y1, y2 = y2, y1
-
     if (x1 == x2):
+        if y2 < y1:
+            y1, y2 = y2, y1
         floor[x1, y1:y2+1] += 1
     elif (y1 == y2):
+        if x2 < x1:
+            x1, x2 = x2, x1
         floor[x1:x2+1 , y1] += 1
+    else:   #diagonal
+        if x1 < x2: 
+            xrange = range(x1, x2+1)
+        else:
+            xrange = range(x1, x2-1, -1)
+        if y1 < y2:
+            yrange = range(y1, y2+1)
+        else:
+            yrange = range(y1, y2-1, -1)
+        for x, y in zip(xrange, yrange):
+            floor[x,y] += 1
     return None
 
 def count_crossings(floor):
     return np.sum(floor >= 2)
+
 
 if __name__ == "__main__":
     x1s, y1s, x2s, y2s = load()
