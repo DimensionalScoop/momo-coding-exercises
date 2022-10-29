@@ -27,18 +27,29 @@ def add_vent(ocean, p1, p2, allow_diagonals=True):
 
     return ocean
 
-
-if __name__ == "__main__":
-    with open("input") as f:
+def load_vent_lines(fname):
+    with open(fname) as f:
         input_ = [l.replace("->", ",") for l in f.readlines()]
 
     points = np.genfromtxt(input_, delimiter=",", dtype="int32")
     start_points, end_points = points[:, :2], points[:, 2:]
+    return start_points, end_points
 
-    ocean_size = np.max(points) + 1
+def draw_ocean_floor(start_points, end_points):
+    ocean_size = np.max([start_points, end_points]) + 1
     ocean = np.zeros([ocean_size] * 2)
 
     for p1, p2 in zip(start_points, end_points):
         ocean = add_vent(ocean, p1, p2, True)
 
-    print((ocean > 1).sum())
+    return ocean
+    
+def count_vent_crossings(ocean):
+    return np.sum(ocean>1)
+
+
+if __name__ == "__main__":
+    start_points, end_points = load_vent_lines("input")
+    ocean = draw_ocean_floor(start_points, end_points)
+    n_crossings = count_vent_crossings(ocean)
+    print(n_crossings)
