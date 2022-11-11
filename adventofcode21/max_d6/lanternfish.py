@@ -21,4 +21,4 @@ def step():
 for _ in range(256):
     step()
 
-print(count.sum())
+print(f"{count.sum():e}")
