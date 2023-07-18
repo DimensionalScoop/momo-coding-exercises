@@ -1,0 +1,267 @@
+{
+    "alloc_samples": 5,
+    "elapsed_time_sec": 0.8114025592803955,
+    "files": {
+        "/home/elayn/Projects/momo-coding-exercises/adventofcode21/max_d5/vents.py": {
+            "functions": [
+                {
+                    "line": "add_vent",
+                    "lineno": 4,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.8658596550545409,
+                    "n_cpu_percent_python": 79.46431180040805,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 1.9119970487859292,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "load_vent_lines",
+                    "lineno": 30,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.002963512732188951,
+                    "n_cpu_percent_python": 2.5201009670277825,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.022290836702126823,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "draw_ocean_floor",
+                    "lineno": 38,
+                    "memory_samples": [
+                        [
+                            180569863,
+                            25.216588020324707
+                        ]
+                    ],
+                    "n_avg_mb": 15.122308731079102,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.07651413481448094,
+                    "n_cpu_percent_python": 5.056813197792757,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 15.122308731079102,
+                    "n_malloc_mb": 15.122308731079102,
+                    "n_mallocs": 1,
+                    "n_peak_mb": 15.122308731079102,
+                    "n_python_fraction": 0.60903,
+                    "n_sys_percent": 0.02834047057948617,
+                    "n_usage_fraction": 0.6019465439517789
+                }
+            ],
+            "leaks": {},
+            "lines": [
+                {
+                    "line": "import numpy as np\n",
+                    "lineno": 1,
+                    "memory_samples": [
+                        [
+                            65624841,
+                            10.000036239624023
+                        ]
+                    ],
+                    "n_avg_mb": 10.000036239624023,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 1.0431216818918168,
+                    "n_cpu_percent_python": 8.053585526681495,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 10.000036239624023,
+                    "n_malloc_mb": 10.000036239624023,
+                    "n_mallocs": 1,
+                    "n_peak_mb": 10.000036239624023,
+                    "n_python_fraction": 0.996907,
+                    "n_sys_percent": 0.9541011675293753,
+                    "n_usage_fraction": 0.39805345604822107
+                },
+                {
+                    "line": "    if x1 == x2:\n",
+                    "lineno": 9,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.03016739035095286,
+                    "n_cpu_percent_python": 3.7940198899481614,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.019683819765578387,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "            for _ in range(steps):\n",
+                    "lineno": 23,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.009015230828940238,
+                    "n_cpu_percent_python": 1.266255243124154,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.004962649991381196,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "                y += ydir\n",
+                    "lineno": 26,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.8263607448286392,
+                    "n_cpu_percent_python": 74.40403666733573,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 1.887666868074987,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "        input_ = [l.replace(\"->\", \",\") for l in f.readlines()]\n",
+                    "lineno": 32,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.0004972422217718039,
+                    "n_cpu_percent_python": 1.2594787785378934,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.011708653018722554,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "    points = np.genfromtxt(input_, delimiter=\",\", dtype=\"int32\")\n",
+                    "lineno": 34,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.00246716368510115,
+                    "n_cpu_percent_python": 1.2606221884898892,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.01058129050872027,
+                    "n_usage_fraction": 0.0
+                },
+                {
+                    "line": "    ocean = np.zeros([ocean_size] * 2)\n",
+                    "lineno": 40,
+                    "memory_samples": [
+                        [
+                            180569863,
+                            25.216588020324707
+                        ]
+                    ],
+                    "n_avg_mb": 15.122308731079102,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.0,
+                    "n_cpu_percent_python": 0.0,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 15.122308731079102,
+                    "n_malloc_mb": 15.122308731079102,
+                    "n_mallocs": 1,
+                    "n_peak_mb": 15.122308731079102,
+                    "n_python_fraction": 0.60903,
+                    "n_sys_percent": 0.0,
+                    "n_usage_fraction": 0.6019465439517789
+                },
+                {
+                    "line": "        ocean = add_vent(ocean, p1, p2, True)\n",
+                    "lineno": 43,
+                    "memory_samples": [],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 0.07651413481448094,
+                    "n_cpu_percent_python": 5.056813197792757,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 0.0,
+                    "n_malloc_mb": 0.0,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 0.0,
+                    "n_python_fraction": 0,
+                    "n_sys_percent": 0.02834047057948617,
+                    "n_usage_fraction": 0.0
+                }
+            ],
+            "percent_cpu_time": 100.0
+        }
+    },
+    "gpu": false,
+    "growth_rate": 101.12540906987168,
+    "max_footprint_fname": "/home/elayn/Projects/momo-coding-exercises/adventofcode21/max_d5/vents.py",
+    "max_footprint_lineno": 42,
+    "max_footprint_mb": 25.40507411956787,
+    "memory": true,
+    "program": "performance-test.py",
+    "samples": [
+        [
+            65564554,
+            10.000036239624023
+        ],
+        [
+            65572179,
+            10.094279289245605
+        ],
+        [
+            180537523,
+            10.188522338867188
+        ],
+        [
+            180540719,
+            25.31083106994629
+        ],
+        [
+            180542598,
+            25.40507411956787
+        ]
+    ]
+}

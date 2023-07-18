@@ -1,0 +1,54 @@
+{
+    "alloc_samples": 2,
+    "elapsed_time_sec": 0.06987166404724121,
+    "files": {
+        "lanternfish.py": {
+            "functions": [],
+            "leaks": {},
+            "lines": [
+                {
+                    "line": "import numpy as np\n",
+                    "lineno": 1,
+                    "memory_samples": [
+                        [
+                            49851947,
+                            10.00016975402832
+                        ]
+                    ],
+                    "n_avg_mb": 0.0,
+                    "n_copy_mb_s": 0.0,
+                    "n_cpu_percent_c": 6.854625245953328,
+                    "n_cpu_percent_python": 76.77946841680458,
+                    "n_gpu_avg_memory_mb": 0.0,
+                    "n_gpu_peak_memory_mb": 0.0,
+                    "n_gpu_percent": 0,
+                    "n_growth_mb": 10.00016975402832,
+                    "n_malloc_mb": 10.00016975402832,
+                    "n_mallocs": 0,
+                    "n_peak_mb": 10.00016975402832,
+                    "n_python_fraction": 0.9969070000000001,
+                    "n_sys_percent": 16.365906337242087,
+                    "n_usage_fraction": 1.0
+                }
+            ],
+            "percent_cpu_time": 100.0
+        }
+    },
+    "gpu": false,
+    "growth_rate": 100.94241449835008,
+    "max_footprint_fname": "lanternfish.py",
+    "max_footprint_lineno": 1,
+    "max_footprint_mb": 10.094412803649902,
+    "memory": true,
+    "program": "lanternfish.py",
+    "samples": [
+        [
+            49832053,
+            10.00016975402832
+        ],
+        [
+            49834013,
+            10.094412803649902
+        ]
+    ]
+}
